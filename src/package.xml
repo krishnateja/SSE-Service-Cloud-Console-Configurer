@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service Cloud Console Configurer</fullName>
+    <description>SSE Service Cloud Configurer - Is used to configure right side panel is Service Cloud Console in few clicks.</description>
+    <types>
+        <members>SSELeftBarCustomizeController</members>
+        <members>TestServiceCloudConsoleConfigurer</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>jQueryAccordion</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>updateOrder</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>SSE_Service_Cloud_Configurer</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Accordion__c.Field10__c</members>
+        <members>Accordion__c.Field11__c</members>
+        <members>Accordion__c.Field12__c</members>
+        <members>Accordion__c.Field13__c</members>
+        <members>Accordion__c.Field14__c</members>
+        <members>Accordion__c.Field15__c</members>
+        <members>Accordion__c.Field16__c</members>
+        <members>Accordion__c.Field17__c</members>
+        <members>Accordion__c.Field18__c</members>
+        <members>Accordion__c.Field19__c</members>
+        <members>Accordion__c.Field1__c</members>
+        <members>Accordion__c.Field20__c</members>
+        <members>Accordion__c.Field2__c</members>
+        <members>Accordion__c.Field3__c</members>
+        <members>Accordion__c.Field4__c</members>
+        <members>Accordion__c.Field5__c</members>
+        <members>Accordion__c.Field6__c</members>
+        <members>Accordion__c.Field7__c</members>
+        <members>Accordion__c.Field8__c</members>
+        <members>Accordion__c.Field9__c</members>
+        <members>Accordion__c.Tab1__c</members>
+        <members>Accordion__c.Tab2__c</members>
+        <members>Accordion__c.Tab3__c</members>
+        <members>Accordion__c.Tab4__c</members>
+        <members>Accordion__c.Tab5__c</members>
+        <members>Accordion__c.Tab6__c</members>
+        <members>PageBlock_Order__c.Order__c</members>
+        <members>PageBlock_Order__c.Special_Case__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Accordion__c</members>
+        <members>PageBlock_Order__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Accordion__c</members>
+        <members>PageBlock_Order__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Accordion__c-Accordion Layout</members>
+        <members>PageBlock_Order__c-PageBlock Order Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Accordion__c.All</members>
+        <members>PageBlock_Order__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>jqueryCSS</members>
+        <members>jqueryJS</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>PageBlock_Order__c.Update_PageBlockName</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>PageBlock_Order__c.Update PageBlock Order</members>
+        <name>WorkflowRule</name>
+    </types>
+    <version>25.0</version>
+</Package>

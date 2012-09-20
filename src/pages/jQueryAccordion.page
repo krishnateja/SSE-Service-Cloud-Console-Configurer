@@ -1,0 +1,104 @@
+<apex:page controller="SSELeftBarCustomizeController">
+        <apex:includeScript value="/support/console/22.0/integration.js"/>
+    <apex:stylesheet value="{!URLFOR($Resource.jqueryCSS, 'jquery-ui-1.8.18.custom.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jqueryJS, 'jquery-1.7.1.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jqueryJS, 'jquery-ui-1.8.18.custom.min.js')}"/>
+    <style type="text/css">
+        h1, h2, h3, h4, h5, h6 {
+            display: block;
+        }
+    </style>
+
+    <script>
+    $(function() {
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            autoHeight: false,
+            navigation: true
+        });
+    });
+    </script>
+    <div id="accordion">
+        <h3><a href="#tab-1"><span>Page 1</span></a></h3>
+        <div id="accordion-1">
+            <apex:pageBlock rendered="{!acc.Tab1__c != null}">                        
+                <apex:pageBlockSection >
+                    <apex:pageBlockTable value="{!varia1}" var="c" >
+                        <apex:column headerValue="Action">
+                            <apex:outputLink value="/{!c.id}">Select</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!c[columnsForCase['11']]}"/>   
+                        <apex:column value="{!c[columnsForCase['12']]}"/>   
+                        <apex:column value="{!c[columnsForCase['13']]}"/>   
+                        <apex:column value="{!c[columnsForCase['14']]}"/>                        
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>
+        <h3><a href="#tab-2"><span>Page 2</span></a></h3>
+        <div id="accordion-2">
+            <apex:pageBlock rendered="{!acc.Tab2__c != null}">
+                <apex:pageBlockSection >
+                    <apex:pageBlockTable value="{!varia2}" var="c" >
+                        <apex:column headerValue="Action">
+                            <apex:outputLink value="/{!c.id}">Select</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!c[columnsForCase['21']]}"/>   
+                        <apex:column value="{!c[columnsForCase['22']]}"/>   
+                        <apex:column value="{!c[columnsForCase['23']]}"/>   
+                        <apex:column value="{!c[columnsForCase['24']]}"/>                         
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>
+        <h3><a href="#tab-3"><span>Page 3</span></a></h3>
+        <div id="accordion-3">
+            <apex:pageBlock rendered="{!acc.Tab3__c != null}">
+                <apex:pageBlockSection >
+                    <apex:pageBlockTable value="{!varia3}" var="c" >
+                        <apex:column headerValue="Action">
+                            <apex:outputLink value="/{!c.id}">Select</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!c[columnsForCase['31']]}"/>   
+                        <apex:column value="{!c[columnsForCase['32']]}"/>   
+                        <apex:column value="{!c[columnsForCase['33']]}"/>   
+                        <apex:column value="{!c[columnsForCase['34']]}"/>                          
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>
+        <h3><a href="#tab-4"><span>Page 4</span></a></h3>
+        <div id="accordion-4">
+            <apex:pageBlock rendered="{!acc.Tab4__c != null}">
+                <apex:pageBlockSection >
+                    <apex:pageBlockTable value="{!varia4}" var="a">
+                        <apex:column headerValue="Action">
+                            <apex:outputLink value="/{!a.id}">Select</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!a[columnsForCase['41']]}"/>   
+                        <apex:column value="{!a[columnsForCase['42']]}"/>   
+                        <apex:column value="{!a[columnsForCase['43']]}"/>   
+                        <apex:column value="{!a[columnsForCase['44']]}"/>                          
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>
+        
+        <h3><a href="#tab-5"><span>Page 5</span></a></h3>
+        <div id="accordion-5">
+            <apex:pageBlock rendered="{!acc.Tab5__c != null}">
+                <apex:pageBlockSection >
+                    <apex:pageBlockTable value="{!varia5}" var="o" >
+                        <apex:column headerValue="Action">
+                            <apex:outputLink value="/{!o.id}">Select</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!o[columnsForCase['51']]}"/>   
+                        <apex:column value="{!o[columnsForCase['52']]}"/>   
+                        <apex:column value="{!o[columnsForCase['53']]}"/>   
+                        <apex:column value="{!o[columnsForCase['54']]}"/>                          
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>
+    </div>
+</apex:page>
